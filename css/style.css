@@ -1,0 +1,143 @@
+#signin {
+  background-color: #242632;
+}
+
+#info button:nth-child(1) {
+  background-color: #4e3bc9;
+  opacity: 0.6;
+}
+
+#info button:nth-child(1):hover {
+  opacity: 1;
+}
+
+#info button:nth-child(3) {
+  background-color: #4b8bec;
+  opacity: 0.6;
+}
+
+#info button:nth-child(3):hover {
+  opacity: 1;
+}
+
+input {
+  background-color: #363942;
+  border: none;
+  border-radius: 2px;
+  color: white;
+}
+
+span {
+  color: white;
+}
+
+body {
+  background-image: url("../Asset/images/dota2_social.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#signup {
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+}
+#signup #signin {
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+  width: 269px;
+  height: 361px;
+  border-radius: 14px;
+  justify-content: center;
+  align-items: flex-start;
+}
+#signup #signin #button {
+  width: 140px;
+}
+#signup #signin #info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 2rem;
+  align-items: flex-start;
+  left: 2rem;
+}
+#signup #signin #info button:nth-child(1) {
+  border: none;
+  border-radius: 2px;
+  width: 192%;
+  padding: 5px;
+  cursor: pointer;
+}
+#signup #signin #info button:nth-child(3) {
+  border: none;
+  border-radius: 2px;
+  width: 192%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#signin input {
+  width: 157%;
+  padding: 2px;
+  position: relative;
+  right: -1.5rem;
+}
+
+#signinhead, #signupbtn {
+  position: relative;
+  top: 7rem;
+  color: white;
+  margin-right: 3rem;
+  right: 4rem;
+}
+
+#signupbtn {
+  position: relative;
+  top: 5.2rem;
+  right: 1rem;
+}
+
+.gamesection {
+  width: 219px;
+  position: absolute;
+  top: 6rem;
+  left: 70%;
+  color: white;
+}
+.gamesection h2 {
+  position: absolute;
+  top: 1.2rem;
+}
+
+.game {
+  width: 96px;
+  object-fit: cover;
+  border-radius: 16px;
+  transform: translateX(-15px);
+  cursor: pointer;
+}
+
+.boxgame {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  background: #232325;
+  opacity: 0.8;
+  border-radius: 2px;
+}
+.boxgame:hover {
+  opacity: 1;
+}
+.boxgame .data_game {
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+}
+
+#login {
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+//body color
+
+$login : #242632;
+$first : #4e3bc9;
+
+$secondary: #4b8bec;
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+$primary_input : #363942;
+
+#signin{
+    background-color: $login;
+}
+
+#info button:nth-child(1){  // first button 
+    background-color: $first;
+    opacity: 0.6;
+}
+
+#info button:nth-child(1):hover{  // first button 
+    opacity: 1;
+} 
+
+
+#info button:nth-child(3){  // last button 
+    background-color: $secondary;
+    opacity: 0.6;
+}
+
+#info button:nth-child(3):hover{  // last button 
+    opacity: 1;
+}
+
+
+input{
+   background-color: $primary_input;
+   border: none;
+   border-radius: 2px;
+   color: white;
+}
+
+span{
+    color: white;
+}
+
