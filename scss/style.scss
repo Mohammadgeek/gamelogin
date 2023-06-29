@@ -9,13 +9,6 @@
     align-items: center;
 }
 
-@mixin btn_custom{
-    border: none;
-            border-radius: 2px;
-            width: 192%;
-            padding: 5px;
-            cursor: pointer;
-}
 
 body{
     background-image: url('../Asset/images/dota2_social.jpg');
@@ -25,7 +18,8 @@ body{
 
 
 
-#signup {
+#signinmenu {
+    visibility: visible;
     @include flex_custom();
 
     #signin{
@@ -35,27 +29,15 @@ body{
         border-radius: 14px;
         justify-content: center;
         align-items: flex-start;
-
-        #button{
-            width: 140px;
-        }
-        #info{
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          top: 2rem;
-          align-items: flex-start;
-          left: 2rem;
-        }
-
-        #info button:nth-child(1){
-           @include btn_custom();
-        }
-
-        #info button:nth-child(3){
-            @include btn_custom();
-        }
+        text-align: center;
+            
     }
+}
+#signinmenu.show{
+    scroll-behavior: smooth;
+}
+#signinmenu.hide{
+    visibility: hidden;
 }
 
 
@@ -66,18 +48,20 @@ body{
     right: -1.5rem;
 }
 
-#signinhead,#signupbtn{
+#signinhead,#backsignup,#backsignin{
     position: relative;
-    top: 7rem;
+    top: 6rem;
     color: white;
     margin-right: 3rem;
-    right: 4rem;
+    right: 2rem;
+    
 }
 
-#signupbtn{
-position: relative;
-top: 5.2rem;
-right: 1rem;
+#backsignup{
+    position: relative;
+    right: -1rem;
+    font-size: 13px;
+    top: 5rem;
 }
 
 
@@ -90,18 +74,23 @@ top: 6rem;
 left: 70%;
 color: white;
 h2{
-position: absolute;
-top: 1.2rem;
+    position: absolute;
+    top: 2.2rem;
+    font-size: 14px;
+}
+h1{
+    position: relative;
+    top: -1rem;
 }
 }
 
 
 .game{
-width: 96px;
-object-fit: cover;
-border-radius: 16px;
-transform: translateX(-15px);
-cursor: pointer;
+    width: 54px;
+    object-fit: cover;
+    border-radius: 5px;
+    transform: translateX(-23px);
+    cursor: pointer;
 }
 
 .boxgame{
@@ -110,7 +99,9 @@ cursor: pointer;
     justify-content: space-around;
     background: #232325;
     opacity: 0.8;
-    border-radius: 2px;
+    border-radius: 11px;
+    width: 218px;
+    
     &:hover{
         opacity: 1;
     }
@@ -120,11 +111,56 @@ cursor: pointer;
 
 }
 
+.boxgame.first img{
+    transform: translateX(-0.7rem);
+}
+
 
 
 
 // login page 
 
-#login {
+#signupmenu{
     visibility: hidden;
+    @include flex_custom();
+   
+    h3{
+            position: absolute;
+            left: 42%;
+            top: 6.8rem;
+            z-index: 100;
+            color: white;
+            font-size: 1.5em;
+        } 
+
+    #backsignin{
+            position: absolute;
+            left: 42%;
+            top: 11rem;
+            z-index: 100;
+            font-size: 14px;
+            text-decoration: underline;
+    }
+
+
+    #signup{
+        @include flex_custom();
+        width: 269px;
+        height: 468px;
+        border-radius: 14px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -22rem;
+        left: auto;
+
+        
+
 }
+}
+#signupmenu.show{
+    visibility: visible;
+    scroll-behavior: smooth;
+}
+
+

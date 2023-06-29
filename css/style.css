@@ -1,10 +1,41 @@
+body {
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 #signin {
   background-color: #242632;
+  font-family: inter;
+}
+
+#signup {
+  background-color: #242632;
+  font-family: inter;
+}
+
+#signup #info {
+  top: 2rem;
+  align-items: flex-start;
+  left: 1%;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 2rem;
+  align-items: flex-start;
+  left: 1.5rem;
 }
 
 #info button:nth-child(1) {
-  background-color: #4e3bc9;
+  background-color: #5b46e4;
+  border-radius: 2px;
+  padding: 5px;
+  cursor: pointer;
   opacity: 0.6;
+  width: 210px;
 }
 
 #info button:nth-child(1):hover {
@@ -13,7 +44,11 @@
 
 #info button:nth-child(3) {
   background-color: #4b8bec;
+  border-radius: 2px;
+  padding: 5px;
+  cursor: pointer;
   opacity: 0.6;
+  width: 210px;
 }
 
 #info button:nth-child(3):hover {
@@ -37,12 +72,13 @@ body {
   background-repeat: no-repeat;
 }
 
-#signup {
+#signinmenu {
+  visibility: visible;
   display: flex;
   flex-flow: nowrap column;
   align-items: center;
 }
-#signup #signin {
+#signinmenu #signin {
   display: flex;
   flex-flow: nowrap column;
   align-items: center;
@@ -51,31 +87,15 @@ body {
   border-radius: 14px;
   justify-content: center;
   align-items: flex-start;
+  text-align: center;
 }
-#signup #signin #button {
-  width: 140px;
+
+#signinmenu.show {
+  scroll-behavior: smooth;
 }
-#signup #signin #info {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 2rem;
-  align-items: flex-start;
-  left: 2rem;
-}
-#signup #signin #info button:nth-child(1) {
-  border: none;
-  border-radius: 2px;
-  width: 192%;
-  padding: 5px;
-  cursor: pointer;
-}
-#signup #signin #info button:nth-child(3) {
-  border: none;
-  border-radius: 2px;
-  width: 192%;
-  padding: 5px;
-  cursor: pointer;
+
+#signinmenu.hide {
+  visibility: hidden;
 }
 
 #signin input {
@@ -85,18 +105,19 @@ body {
   right: -1.5rem;
 }
 
-#signinhead, #signupbtn {
+#signinhead, #backsignup, #backsignin {
   position: relative;
-  top: 7rem;
+  top: 6rem;
   color: white;
   margin-right: 3rem;
-  right: 4rem;
+  right: 2rem;
 }
 
-#signupbtn {
+#backsignup {
   position: relative;
-  top: 5.2rem;
-  right: 1rem;
+  right: -1rem;
+  font-size: 13px;
+  top: 5rem;
 }
 
 .gamesection {
@@ -108,14 +129,19 @@ body {
 }
 .gamesection h2 {
   position: absolute;
-  top: 1.2rem;
+  top: 2.2rem;
+  font-size: 14px;
+}
+.gamesection h1 {
+  position: relative;
+  top: -1rem;
 }
 
 .game {
-  width: 96px;
+  width: 54px;
   object-fit: cover;
-  border-radius: 16px;
-  transform: translateX(-15px);
+  border-radius: 5px;
+  transform: translateX(-23px);
   cursor: pointer;
 }
 
@@ -125,7 +151,8 @@ body {
   justify-content: space-around;
   background: #232325;
   opacity: 0.8;
-  border-radius: 2px;
+  border-radius: 11px;
+  width: 218px;
 }
 .boxgame:hover {
   opacity: 1;
@@ -136,8 +163,49 @@ body {
   align-items: center;
 }
 
-#login {
+.boxgame.first img {
+  transform: translateX(-0.7rem);
+}
+
+#signupmenu {
   visibility: hidden;
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+}
+#signupmenu h3 {
+  position: absolute;
+  left: 42%;
+  top: 6.8rem;
+  z-index: 100;
+  color: white;
+  font-size: 1.5em;
+}
+#signupmenu #backsignin {
+  position: absolute;
+  left: 42%;
+  top: 11rem;
+  z-index: 100;
+  font-size: 14px;
+  text-decoration: underline;
+}
+#signupmenu #signup {
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+  width: 269px;
+  height: 468px;
+  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -22rem;
+  left: auto;
+}
+
+#signupmenu.show {
+  visibility: visible;
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */
