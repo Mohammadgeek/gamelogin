@@ -1,0 +1,25 @@
+
+$xl : 800px;
+$medium: 700px;
+$mobile : 480px;
+$small : 280px;  
+
+
+
+
+
+@media screen and(max-width: $medium) {
+    .gamesection{
+       transform: translateX(-30rem);
+    }
+
+}
+
+@media screen and(max-width: $mobile) {
+    .gamesection{
+        transform: translate(-9rem,24rem);
+    }
+}
+
+
+    

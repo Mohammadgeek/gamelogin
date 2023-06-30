@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> 
     <title>pertty gamelogin</title>
 </head>
 <body>
-    <form action="" id = "signup">
+    <form action="" id = "signinmenu">
+        <span class="close_btn one">X</span>
         <h1 id = "signinhead">signin</h1>
-        <span id = "signupbtn">need account ?  <a href="#">create a account</a></span>
+        <span id = "backsignup">need account ?  <a href="#">create a account</a></span>
         <section id = "signin">
             <label for=""> Email <br>
                 <input type="text">
@@ -32,22 +33,39 @@
     </form>
      
 
-    <form action="" id = "login">
-        <label for="">
-            <input type="text">
+    <form action="" id = "signupmenu">
+        <span class="close_btn second " title="close page!">X</span>
+        <h3>signup</h3>
+        <span id = "backsignin">New users?  <a href="#">create account : </a></span>
+        <section id = "signup">
+            <label for=""> Name <br>
+                <input type="text" name="" id="" value="Reza">
             </label>
-            <label for="">
-            <input type="text">
-            </label>
-            <label for="">
-            <input type="text">
-        </label>
 
-        <div id="info">
-            <button type= "submit">signin</button>
+            <label for="">Lastname <br>
+                <input type="text" name="" id="">
+            </label>
+
+            <label for="">phone number <br>
+                <input type="tel" name="" id="">
+            </label>
+
+            <label for=""> Email <br>
+                <input type="email">
+            </label>
+            
+            <label for="">password<br>
+                <input type="password">
+            </label>
+            
+            <div id="info">
+            <button type= "submit">continue</button>
             <span>connect with google </span>
-            <button>connect google </button>  
+            <button>connect google </button>
+            
             </div>
+            
+        </section>
 
     </form>
       
@@ -89,5 +107,5 @@
 
     
 </body>
-<script src="js/app.js"></script>
+<script data-main="scripts/app" src="scripts/require.js" ></script>
 </html>

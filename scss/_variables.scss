@@ -1,21 +1,61 @@
 //body color
 
 $login : #242632;
-$first : #4e3bc9;
+$first : #5b46e4;
 
 $secondary: #4b8bec;
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 
 $primary_input : #363942;
+$secondary_input: rgb(175, 175, 175);
+
+$font_body: 'Segoe UI', 'Roboto', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+
+$font_form: inter;
+
+body{
+   font-family: $font_body;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
 
 #signin{
     background-color: $login;
+    font-family: $font_form;
+}
+#signup{
+    background-color: $login;
+    font-family: $font_form;
+}
+
+#signup #info{
+    top: 2rem;
+    align-items: flex-start;
+    left: 1%;
+}
+
+
+#info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 2rem;
+    align-items: flex-start;
+    left: 1.5rem;
+
 }
 
 #info button:nth-child(1){  // first button 
     background-color: $first;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
     opacity: 0.6;
+    width: 210px;
 }
 
 #info button:nth-child(1):hover{  // first button 
@@ -25,7 +65,11 @@ $primary_input : #363942;
 
 #info button:nth-child(3){  // last button 
     background-color: $secondary;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
     opacity: 0.6;
+    width: 210px;
 }
 
 #info button:nth-child(3):hover{  // last button 
