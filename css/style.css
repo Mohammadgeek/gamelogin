@@ -66,6 +66,16 @@ span {
   color: white;
 }
 
+@media screen and (max-width: 700px) {
+  .gamesection {
+    transform: translateX(-30rem);
+  }
+}
+@media screen and (max-width: 480px) {
+  .gamesection {
+    transform: translate(-9rem, 24rem);
+  }
+}
 body {
   background-image: url("../Asset/images/dota2_social.jpg");
   background-size: cover;
@@ -88,6 +98,13 @@ body {
   justify-content: center;
   align-items: flex-start;
   text-align: center;
+}
+#signinmenu .close_btn {
+  cursor: pointer;
+  position: absolute;
+  top: 7rem;
+  right: 36rem;
+  font-size: 1.3em;
 }
 
 #signinmenu.show {
@@ -180,6 +197,13 @@ body {
   z-index: 100;
   color: white;
   font-size: 1.5em;
+}
+#signupmenu .close_btn {
+  position: absolute;
+  z-index: 100;
+  top: 8rem;
+  right: 36rem;
+  font-size: 1.3em;
 }
 #signupmenu #backsignin {
   position: absolute;

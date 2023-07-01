@@ -1,7 +1,7 @@
 // import other module scss  
 
 @use "../scss/variables";
-
+@use "../scss/responsive";
 
 @mixin flex_custom {
     display: flex;
@@ -32,6 +32,14 @@ body{
         text-align: center;
             
     }
+    .close_btn{
+        cursor: pointer;
+        position: absolute;
+        top: 7rem;
+        right: 36rem;
+        font-size: 1.3em;
+    }
+    
 }
 #signinmenu.show{
     scroll-behavior: smooth;
@@ -132,6 +140,13 @@ h1{
             color: white;
             font-size: 1.5em;
         } 
+    .close_btn{
+        position: absolute;
+        z-index: 100;
+        top: 8rem;
+        right: 36rem;
+        font-size: 1.3em;
+    }
 
     #backsignin{
             position: absolute;

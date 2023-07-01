@@ -4,6 +4,7 @@ let signMenu = document.querySelector('#signinmenu');
 let signupMenu = document.querySelector('#signupmenu');
 
 let btn_signup = document.querySelector('#backsignup');
+let close_btn  = document.querySelectorAll('.close_btn');
 
 let btn_signin = document.querySelector('#backsignin');
 let oldimage;
@@ -15,8 +16,10 @@ oldimage = getoldimg.getPropertyValue("background-image").slice(4,-1);
 
 window.onload = () =>{
   console.log('loaded pages')
-  getUsers();
-
+  //getUsers();
+    
+ /*
+  try {
     require.config({
         paths: {
           'fontawesome': 'vendor/fontawesome/fontawesome.min',
@@ -32,6 +35,10 @@ window.onload = () =>{
       require(['fontawesome'], function (fontawesome) {
         console.log('Congrats, Font Awesome is installed using Require.js')
       })
+    }
+    catch {
+      console.log('not found font awesome icons!')
+    }*/
 
 }
 
@@ -79,7 +86,32 @@ btn_signup.addEventListener('click',back_signup);
 
 
 let signupapi  = "http://localhost:8000/register";
-let loginapi = "http://localhost:8000/login"
+let loginapi = "http://localhost:8000/login";
+
+
+
+function closepage(){
+
+  let text = "are you can clear login page :? !\nEither OK or Cancel.";
+  if (confirm(text) == true) {
+    text = "clear login page!";
+    signupMenu.style.display = 'none';
+    signMenu.style.display = 'none';
+
+  } else {
+    text = "You canceled!";
+    return text;
+
+  }
+}
+
+//resonsive page 
+
+
+
+close_btn.forEach(index =>{
+  index.addEventListener('click',closepage);
+})
 
 async function getUsers() {
   try {
@@ -92,6 +124,7 @@ async function getUsers() {
         }
       });
       return await res.json();
+
   } catch (error) {
       console.error('error for get signup api : ', error);
   }
@@ -105,7 +138,8 @@ try{
         'Accept': 'application/json',
       }
     })
-    return await getlogin.json();
+    //return await getlogin.json();
+
   } catch (error) {
       console.error('error for get login api : ', error);
   }
