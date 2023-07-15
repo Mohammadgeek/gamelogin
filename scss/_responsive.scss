@@ -19,6 +19,13 @@ $small : 280px;
     .gamesection{
         transform: translate(-9rem,24rem);
     }
+    .gamesection.active{
+        transform: translate(-10rem, 31rem);
+    }
+    #backsignin{
+        left: 15%;
+        width: 300px;
+    }
 }
 
 

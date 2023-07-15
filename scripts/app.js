@@ -12,6 +12,8 @@ let oldimage;
 let body = document.querySelector('body');
 let getoldimg = window.getComputedStyle(body);
 
+let gamesection = document.querySelector('.gamesection');
+
 oldimage = getoldimg.getPropertyValue("background-image").slice(4,-1);
 
 window.onload = () =>{
@@ -47,7 +49,6 @@ window.onload = () =>{
 function changebackground(){
     total_get_img.forEach(value =>{
         value.addEventListener('click',function(){
-            //console.log(value.src);
             let newsrc = value.src;
             console.log(`replace image for change : , ${newsrc}, ${oldimage}`);
             if (oldimage != newsrc){
@@ -70,6 +71,7 @@ function back_signup(){
     console.log('signup page is show .. soon!')
     signMenu.classList.toggle('hide');
     signupMenu.classList.toggle('show');
+    gamesection.classList.add('active');
 }
 
 function back_signin(){

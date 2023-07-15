@@ -25,7 +25,7 @@ body{
     #signin{
         @include flex_custom();
         width: 269px;
-        height: 361px;
+        height: 391px;
         border-radius: 14px;
         justify-content: center;
         align-items: flex-start;
@@ -35,7 +35,7 @@ body{
     .close_btn{
         cursor: pointer;
         position: absolute;
-        top: 7rem;
+        top: 8.3rem;
         right: 36rem;
         font-size: 1.3em;
     }
@@ -53,7 +53,7 @@ body{
     width: 157%;
     padding: 2px;
     position: relative;
-    right: -1.5rem;
+    left: 1rem;
 }
 
 #signinhead,#backsignup,#backsignin{
@@ -135,15 +135,15 @@ h1{
     h3{
             position: absolute;
             left: 42%;
-            top: 5.8rem; 
+            top: 6.8rem; 
             z-index: 100;
             color: white;
-            font-size: 1.5em;
+            font-size: 2em;
         } 
     .close_btn{
         position: absolute;
         z-index: 100;
-        top: 8rem;
+        top: 10rem;
         right: 36rem;
         font-size: 1.3em;
         cursor: pointer;
@@ -152,10 +152,10 @@ h1{
     #backsignin{
             position: absolute;
             left: 42%;
-            top: 9.5rem;
+            top: 11.8rem;
             z-index: 100;
             font-size: 14px;
-            text-decoration: underline;
+            
     }
 
 
