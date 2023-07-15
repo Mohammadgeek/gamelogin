@@ -17,10 +17,10 @@ $small : 280px;
 
 @media screen and(max-width: $mobile) {
     .gamesection{
-        transform: translate(-9rem,24rem);
+        transform: translate(-10rem,26rem);
     }
     .gamesection.active{
-        transform: translate(-10rem, 31rem);
+        transform: translate(-10rem, 26rem);
     }
     #backsignin{
         left: 15%;
