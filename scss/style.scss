@@ -104,7 +104,7 @@ h1{
 .boxgame{
     margin-top: 0.5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background: #232325;
     opacity: 0.8;
     border-radius: 11px;
@@ -120,8 +120,12 @@ h1{
 }
 
 .boxgame.first img{
-    transform: translateX(-0.7rem);
+    transform: translateX(-2.4rem);
 }
+.boxgame.two img{
+    transform: translateX(-2.5rem);
+}
+
 
 
 
