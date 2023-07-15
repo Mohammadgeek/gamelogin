@@ -78,6 +78,8 @@ function back_signin(){
     if(signupMenu.classList.contains('show')){
         signupMenu.classList.remove('show');
         signMenu.classList.replace('hide','show');
+        gamesection.classList.remove('active');
+        
 
     }
 }
